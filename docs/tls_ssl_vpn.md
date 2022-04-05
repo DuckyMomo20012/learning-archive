@@ -12,6 +12,14 @@ dir: ltr
 
 Origin blog: https://hackmd.io/@mhud/mmt-group-5
 
+## Team Members — Group 5
+- **To Gia Hao**
+- **Nguyen Thanh Quan**
+- **Lam Chi Van**
+- **Duong Tien Vinh**
+
+---
+
 ## TLS/SSL
 
 - SSL stand for **S**ecure **S**ocket **L**ayer.
