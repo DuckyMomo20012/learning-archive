@@ -1,4 +1,4 @@
-# 19CNTT_Group05_Deepfake: Nguy hiểm tiềm tàng ẩn sau những gương mặt ảo
+# 19CNTT_Group05_Deepfake: Hidden dangers behind virtual faces
 
 Bài viết trên [Notion](https://irradiated-hippodraco-e85.notion.site/Deepfake-Nguy-hi-m-ti-m-t-ng-n-sau-nh-ng-g-ng-m-t-o-570653ce46e64e80a3fa0c8dd5012219)
 
