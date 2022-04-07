@@ -9,6 +9,10 @@ My cryptography blogs collection
             <th> Lang </th>
         </tr>
         <tr>
+            <td> <a href="docs/hash_length_extension_attack.md">Hash Length Extension Attack (HLE)</a> </td>
+            <td> <img src="https://flagcdn.com/vn.svg" width="30" alt="Vietnam" /> </td>
+        </tr>
+        <tr>
             <td> <a href="docs/tls_ssl_vpn.md">Cryptographic Security for Internet: TLS/SSL, VPN/SSL vs. VPN/IPsec</a> </td>
             <td> <img src="https://flagcdn.com/us.svg" width="30" alt="United States" /> </td>
         </tr>
