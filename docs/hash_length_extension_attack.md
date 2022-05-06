@@ -13,7 +13,7 @@ dcup
 
 Và thêm dòng **'10.9.0.80 www.seedlab-hashlen.com'** vào file `/etc/hosts` sao cho:
 
-![Update host](../img/hash-length/update_host.png)
+![Update host](https://i.imgur.com/zY4nnmv.png)
 
 # 2. Task 1: Send Request to List Files:
 
@@ -40,7 +40,7 @@ echo -n "88zjxc:myname=DuongVinh&uid=1004&lstcmd=1" | sha256sum
 c31f0b37d6d60a5162301dfb1df61238da5c06fcb0be0fea75f027d2c0b45eb1  -
 ```
 
-![MAC](../img/hash-length/mac.png)
+![MAC](https://i.imgur.com/aEGmy8n.png)
 
 - Khi đó ta sẽ có chuỗi MAC (signature) là: c31f0b37d6d60a5162301dfb1df61238da5c06fcb0be0fea75f027d2c0b45eb1
 
@@ -50,7 +50,7 @@ Sau khi có chuỗi MAC thì ta có thể gửi request lên server:
 curl "http://www.seedlab-hashlen.com/?myname=DuongVinh&uid=1004&lstcmd=1&mac=c31f0b37d6d60a5162301dfb1df61238da5c06fcb0be0fea75f027d2c0b45eb1"
 ```
 
-![List file successfully](../img/hash-length/list_success.png)
+![List file successfully](https://i.imgur.com/9pbGuJP.png)
 
 Có thể thấy request được gửi lên server có địa chỉ MAC hợp lệ và server sẽ list ra 2 file là `secret.txt` và `key.txt`.
 
@@ -60,7 +60,7 @@ Bây giờ, ta sẽ thử download file secret.txt với giá trị MAC cũ:
 curl "http://www.seedlab-hashlen.com/?myname=DuongVinh&uid=1004&lstcmd=1&download=secret.txt&mac=c31f0b37d6d60a5162301dfb1df61238da5c06fcb0be0fea75f027d2c0b45eb1"
 ```
 
-![Download file failed](../img/hash-length/download_fail.png)
+![Download file failed](https://imgur.com/LwJMejt.png)
 
 Ta có thể thấy nếu sử dụng giá trị MAC cũ thì ta không thể download được file `secret.txt` bởi vì giá trị MAC đó chỉ được tạo cho request với query gồm các parameters: **“myname=DuongVinh&uid=1004&lstcmd=1”**
 
@@ -71,7 +71,7 @@ echo -n "88zjxc:myname=DuongVinh&uid=1004&lstcmd=1&download=secret.txt" | sha256
 cb24212ab81cd8766ec7613ecadaaae0165de49095b700b32416588c017ae198  -
 ```
 
-![MAC for download file](../img/hash-length/mac_download.png)
+![MAC for download file](https://imgur.com/E3KiJ6r.png)
 
 Bây giờ ta sẽ thử download file `secret.txt` với giá trị MAC mới tạo:
 
@@ -79,7 +79,7 @@ Bây giờ ta sẽ thử download file `secret.txt` với giá trị MAC mới t
 curl "http://www.seedlab-hashlen.com/?myname=DuongVinh&uid=1004&lstcmd=1&download=secret.txt&mac=cb24212ab81cd8766ec7613ecadaaae0165de49095b700b32416588c017ae198"
 ```
 
-![Download file successfully](../img/hash-length/download_success.png)
+![Download file successfully](https://imgur.com/yizB0yj.png)
 
 Có thể thấy với giá trị MAC mới, ta đã có thể tải thông tin file `secret.txt` về với nội dung như hình.
 
@@ -132,7 +132,7 @@ Từ đó ta có chuỗi padding được tạo thành như sau: `1 byte (\x80) 
 
 Sau khi có được chuỗi padding, ta hãy nói về mục đích của padding trong việc attack:
 
-![A visualization of the first block in SHA256 when the secret || message is less than 1 block long](../img/hash-length/hash_block.png)
+![A visualization of the first block in SHA256 when the secret || message is less than 1 block long](https://i.imgur.com/TsBW66J.png)
 
 A visualization of the first block in SHA256 when the secret || message is less than 1 block long
 
@@ -189,7 +189,7 @@ gcc length_ext.c -o length_ext -lcrypto
 
 Sau khi chạy chương trình ta sẽ có chuỗi hash: `b395b1ddcf27279b3a7cdab114c3e5c423cb64ab02645eb55073332fa7563865`
 
-![New MAC for attacking](../img/hash-length/mac_attack.png)
+![New MAC for attacking](https://imgur.com/gUg7D2z.png)
 
 Ngoài ra, ta cũng có thể dùng một tool khác từ `iagox86` trên [**Github**](https://github.com/iagox86/hash_extender):
 
@@ -199,7 +199,7 @@ Ngoài ra, ta cũng có thể dùng một tool khác từ `iagox86` trên [**Git
 
 Cũng sẽ cho một kết quả tương tự như sử dụng code từ bài Lab cung cấp:
 
-![Using hash_extender tool](../img/hash-length/mac_attack_tool.png)
+![Using hash_extender tool](https://imgur.com/M45smlk.png)
 
 Để gửi request lên server ta cần gửi theo format sau:
 
@@ -215,13 +215,13 @@ curl "http://www.seedlab-hashlen.com/?myname=DuongVinh&uid=1004&lstcmd=1%80%00%0
 
 Và ta sẽ lấy được thông tin file `secret.txt` mà không cần biết tới key: **`88zjxc:`**
 
-![Attack successfully](../img/hash-length/attack_success.png)
+![Attack successfully](https://imgur.com/uG4OnmR.png)
 
 # 5. Task 4: Attack Mitigation using HMAC
 
 Em sẽ chỉnh lại file `lab.py` tại đường dẫn: `/home/seed/Labsetup/Labsetup/image_flask/app/www/lab.py`
 
-![Edit server to handle HMAC](../img/hash-length/edit_server.png)
+![Edit server to handle HMAC](https://imgur.com/7mCFMCk.png)
 
 Tắt container, build và start lại container để restart lại server:
 
@@ -233,7 +233,7 @@ dcup
 
 Khi đó, nếu ta request như trên thì sẽ không còn lấy được thông tin file:
 
-![Failed to attack](../img/hash-length/attack_fail.png)
+![Failed to attack](https://imgur.com/fXqjBn0.png)
 
 Qua đó có thể thấy việc sử dụng HMAC thay vì MAC thông thường sẽ giúp chống lại Hash length extension attack.
 
@@ -259,7 +259,7 @@ digestmod=hashlib.sha256).hexdigest()
 print(mac)
 ```
 
-![HMAC](../img/hash-length/hmac.png)
+![HMAC](https://imgur.com/YaXOYT7.png)
 
 Request với thông tin HMAC thay vì MAC:
 
@@ -269,11 +269,11 @@ curl "http://www.seedlab-hashlen.com/?myname=DuongVinh&uid=1004&lstcmd=1&mac=097
 
 Lúc này ta đã có thể list được thông tin file:
 
-![HMAC list file successfully](../img/hash-length/hmac_list_success.png)
+![HMAC list file successfully](https://imgur.com/YbgGO3N.png)
 
 Sử dụng đoạn code như trên để tạo MAC để download file `secret.txt` là: `5268453a8012dd980f7189bd058ef5008f76a8e22bd1cb1c38530037be607da6`
 
-![HMAC to download file](../img/hash-length/hmac_download.png)
+![HMAC to download file](https://imgur.com/aavD3Oe.png)
 
 Request lên server để tải file `secret.txt`:
 
@@ -281,7 +281,7 @@ Request lên server để tải file `secret.txt`:
 curl "http://www.seedlab-hashlen.com/?myname=DuongVinh&uid=1004&lstcmd=1&download=secret.txt&mac=5268453a8012dd980f7189bd058ef5008f76a8e22bd1cb1c38530037be607da6"
 ```
 
-![HMAC download file successfully](../img/hash-length/hmac_download_success.png)
+![HMAC download file successfully](https://imgur.com/njJJx6U.png)
 
 # 6. Tài liệu tham khảo
 

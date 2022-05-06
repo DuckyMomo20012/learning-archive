@@ -12,7 +12,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Hash Length Extension Attack (HLE) </td>
       <td>
-        <img src="https://flagcdn.com/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
       </td>
       <td>
         <a href="docs/hash_length_extension_attack.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -24,7 +24,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Cryptographic Security for Internet: TLS/SSL, VPN/SSL vs. VPN/IPsec </td>
       <td>
-        <img src="https://flagcdn.com/us.svg" width="30" alt="United States" title="English" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="30" alt="United States" title="English" />
       </td>
       <td>
         <a href="docs/tls_ssl_vpn.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -36,7 +36,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Cryptography Security for Internet: IPsec, IKE SA, Oakley/ISAKMP (IPSec Key management) </td>
       <td>
-        <img src="https://flagcdn.com/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
       </td>
       <td>
         <a href="docs/ipsec_ikesa_isakmp.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -48,7 +48,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Tor Network, Dark Web and How To Be Anonymous Online </td>
       <td>
-        <img src="https://flagcdn.com/us.svg" width="30" alt="United States" title="English" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="30" alt="United States" title="English" />
       </td>
       <td>
         <a href="docs/tor.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -60,7 +60,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Domain Controller with Packet filtering, NAT, WAF, DMZ </td>
       <td>
-        <img src="https://flagcdn.com/us.svg" width="30" alt="United States" title="English" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="30" alt="United States" title="English" />
       </td>
       <td>
         <a href="docs/domain_controller.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -72,7 +72,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Zero Trust Network </td>
       <td>
-        <img src="https://flagcdn.com/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
       </td>
       <td>
         <a href="docs/zero_trust_network.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -84,7 +84,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Identity Management: OpenID, OAuth and SAML (19CNTT) </td>
       <td>
-        <img src="https://flagcdn.com/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
       </td>
       <td>
         <a href="docs/identity_management.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -96,7 +96,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Wireless Security: WEP, WPA, WPA2, RSN (19CNTT) </td>
       <td>
-        <img src="https://flagcdn.com/us.svg" width="30" alt="United States" title="English" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="30" alt="United States" title="English" />
       </td>
       <td>
         <a href="docs/wireless_security.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -108,7 +108,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Identity Management: OpenID, OAuth and SAML (19MMT) </td>
       <td>
-        <img src="https://flagcdn.com/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
       </td>
       <td>
         <a href="docs/identity_management_19mmt.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -120,7 +120,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Wireless Security: WEP, WPA, WPA2, RSN (19MMT) </td>
       <td>
-        <img src="https://flagcdn.com/us.svg" width="30" alt="United States" title="English" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="30" alt="United States" title="English" />
       </td>
       <td>
         <a href="docs/wireless_security_19mmt.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -132,7 +132,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Securing Microservices Communication: mTLS, JWT and gRPC </td>
       <td>
-        <img src="https://flagcdn.com/us.svg" width="30" alt="United States" title="English" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="30" alt="United States" title="English" />
       </td>
       <td>
         <a href="docs/securing_microservices.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
@@ -144,7 +144,7 @@ My cryptography blogs/reports collection
     <tr>
       <td> Deepfake: Hidden dangers behind virtual faces </td>
       <td>
-        <img src="https://flagcdn.com/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
+        <img src="https://hatscripts.github.io/circle-flags/flags/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
       </td>
       <td>
         <a href="docs/deepfake.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
