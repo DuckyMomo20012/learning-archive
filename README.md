@@ -33,5 +33,15 @@ My cryptography blogs/reports collection
         &nbsp;
       </td>
     </tr>
+    <tr>
+      <td> IO Netgarage Project Report </td>
+      <td>
+        <img src="https://hatscripts.github.io/circle-flags/flags/vn.svg" width="30" alt="Vietnam" title="Vietnamese" />
+      </td>
+      <td>
+        <a href="docs/io_netgarage.md"><img src="https://img.shields.io/badge/-GitHub-B9C3FF?logo=github&logoColor=black&style=flat-square" height="24" alt="Available at GitHub" title="Read on GitHub" /></a>
+        &nbsp;
+      </td>
+    </tr>
   </tbody>
 </table>
