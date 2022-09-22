@@ -468,9 +468,9 @@ Comparing IPsec and SSL VPNs should include consideration of how clients connect
 - Explain IPSec configuration
   Available at: https://www.youtube.com/watch?v=YIIkuBmAso4&list=LL&index=18
   and: https://www.youtube.com/watch?v=jLhH-PW_aY8&list=LL&index=16
-- [Hhs.gov.](Hhs.gov.) 2022.
+- [Hhs.gov.](../Hhs.gov.) 2022.
   [online] Available at: [https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/nist800113.pdf](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/nist800113.pdf) [Accessed 12 March 2022].
-- [Barracuda.com.](Barracuda.com.) 2022. What is SSL VPN? | Barracuda Networks. [online] Available at: [https://www.barracuda.com/glossary/ssl-vpn](https://www.barracuda.com/glossary/ssl-vpn) [Accessed 12 March 2022].
+- [Barracuda.com.](../Barracuda.com.) 2022. What is SSL VPN? | Barracuda Networks. [online] Available at: [https://www.barracuda.com/glossary/ssl-vpn](https://www.barracuda.com/glossary/ssl-vpn) [Accessed 12 March 2022].
 - Gangam, V., 2022. What is SSL VPN and why you should use one? - Lanworks. [online] Lanworks. Available at: [https://www.lanworks.com/5080-2/](https://www.lanworks.com/5080-2/) [Accessed 12 March 2022].
 - Quigley, C. and Quigley, C., 2022. SSL VPN Explained: A Beginner’s Guide | SSLs.com Blog. [online] SSLs.com Blog. Available at: [https://www.ssls.com/blog/ssl-vpn-explained-a-beginners-guide/](https://www.ssls.com/blog/ssl-vpn-explained-a-beginners-guide/) [Accessed 12 March 2022].
 - Support.huawei.com. 2022. Huawei Firewall: What Is SSL VPN? - Huawei. [online] Available at: [https://support.huawei.com/enterprise/en/doc/EDOC1100086057](https://support.huawei.com/enterprise/en/doc/EDOC1100086057) [Accessed 12 March 2022].
