@@ -1,0 +1,107 @@
+[accounting]
+exten => 6001,1,Dial(SIP/accounting)
+exten => 6001,n,Hangup()
+
+; Guard to know that incoming call was from outside, not from internal
+exten => 7777,1,GotoIf($[${department_num} = 1]?2:4)
+exten => 7777,2,Playback(accounting_department)
+exten => 7777,3,Dial(SIP/accounting)
+exten => 7777,4,Hangup()
+
+[human_resource]
+exten => 6002,1,Dial(SIP/human_resource)
+exten => 6002,n,Hangup()
+
+exten => 7777,1,GotoIf($[${department_num} = 2]?2:4)
+exten => 7777,2,Playback(human_resource_department)
+exten => 7777,3,Dial(SIP/human_resource)
+exten => 7777,4,Hangup()
+
+[business]
+exten => 6003,1,Dial(SIP/business)
+exten => 6003,n,Hangup()
+
+exten => 7777,1,GotoIf($[${department_num} = 3]?2:4)
+exten => 7777,2,Playback(business_department)
+exten => 7777,3,Dial(SIP/business)
+exten => 7777,4,Hangup()
+
+[manager]
+exten => 6004,1,Dial(SIP/manager,15)
+exten => 6004,n,VoiceMail(6004@05-company,u)
+exten => 6004,n,Hangup()
+
+; Call 6500 to retrieve the voicemail message.
+; When prompted, enter the mailbox number and PIN number: 4321 of the mailbox.
+exten => 6500,1,Answer(500)
+; Note: You can set 6004@05-company to view specific mailbox
+exten => 6500,n,VoiceMailMain(@05-company)
+
+[internal]
+include => accounting
+include => human_resource
+include => business
+include => manager
+include => meetme
+
+exten => _8.,1,Goto(outgoing,,1)
+
+[outgoing]
+; Call 85555 to simulate calling to outside number
+exten => _8.,1,Set(outgoing_num=${EXTEN:1})
+exten => _8.,n,Dial(SIP/${outgoing_num})
+exten => _8.,n,Hangup()
+
+[incoming]
+; Check if we are in open hours
+exten => 7777,1,GotoIfTime(7:00-11:00,*,*,*?3:2)
+
+; If not then jump to playback line and then hangup
+exten => 7777,2,GotoIfTime(13:00-17:00,*,*,*?3:99)
+
+exten => 7777,3,Playback(greeting)
+
+exten => 7777,4,Set(i=0)
+exten => 7777,5,While($[${i} < 3])
+
+; Note: terminate string with "#"
+exten => 7777,6,Read(department_num,instruction_dial,4)
+
+exten => 7777,7,Verbose(2,${department_num})
+
+exten => 7777,8,GotoIf($[${READSTATUS} = TIMEOUT]?13:9)
+
+exten => 7777,9,GotoIf($[${department_num} = 1]?accounting,7777,1:10)
+
+
+exten => 7777,10,GotoIf($[${department_num} = 2]?human_resource,7777,1:11)
+
+
+exten => 7777,11,GotoIf($[${department_num} = 3]?business,7777,1:12)
+
+
+; If not number 1, 2 or 3, then we will try to search for available
+;   extensions in internal context
+exten => 7777,12(depart_3),GotoIf($[DIALPLAN_EXISTS(internal,${department_num},1)]?internal,${department_num},1:101)
+
+exten => 7777,13,Set(i=$[${i} + 1])
+exten => 7777,14,EndWhile
+exten => 7777,15,Playback(say_goodbye)
+exten => 7777,16,Hangup()
+
+
+; This lines can't be put in normal flow, so I
+;   have to put it here and finally redirect to hangup line
+exten => 7777,99,Playback(open_hours)
+exten => 7777,100,Goto(incoming,7777,16)
+
+exten => 7777,101,Playback(incorrect_dial)
+exten => 7777,102,Goto(incoming,7777,6)
+
+
+[meetme]
+
+exten => 9059,1,Goto(conf,1)
+
+exten => conf,1,MeetMe(0505,cM)
+exten => conf,n,Hangup()

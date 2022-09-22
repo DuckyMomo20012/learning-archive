@@ -6,9 +6,12 @@ My archive of learning resources
 
 ### Vietnamese:
 
-- Hash Length Extension Attack (HLE): [Markdown](<docs/Hash%20Length%20Extension%20Attack%20(HLE)/hash_length_extension_attack.md>)
+- Hash Length Extension Attack (HLE):
+  [Markdown](<docs/Hash%20Length%20Extension%20Attack%20(HLE)/hash_length_extension_attack.md>)
 
 - IO Netgarage Project Report: [Markdown](docs/IO%20Netgarage/io_netgarage.md)
+
+- Asterisk PBX setup: [Markdown](docs/Asterisk%20PBX/asterisk_pbx.md)
 
 ### English:
 
