@@ -13,6 +13,9 @@ My archive of learning resources
 
 - Asterisk PBX setup: [Markdown](docs/Asterisk%20PBX/asterisk_pbx.md)
 
+- Dr. Evils Insidious Bomb:
+  [PDF](docs/Dr.%20Evils%20Insidious%20Bomb/Dr.%20Evils%20Insidious%20Bomb.pdf)
+
 ### English:
 
 - Cryptographic Security for Internet: TLS/SSL, VPN/SSL vs. VPN/IPsec:
